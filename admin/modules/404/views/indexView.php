@@ -39,7 +39,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
         <div class="copyright login-copyright error-copyright">
-           <p>© 2023 <a href="http://w3layouts.com/"></a></p>    
+           <p>© 2025 <a href="http://w3layouts.com/"></a></p>    
         </div>
 </body>
 </html>

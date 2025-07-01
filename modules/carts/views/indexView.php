@@ -20,64 +20,82 @@
             <div class="section-detail table-responsive">
                 <table class="table">
                     <form action="?modules=carts&controllers=index&action=update" method="post">
-                    <thead>
-                        <tr>
-                            <td>Mã sản phẩm</td>
-                            <td>Ảnh sản phẩm</td>
-                            <td>Tên sản phẩm</td>
-                            <td>Giá sản phẩm</td>
-                            <td>Số lượng</td>
-                            <td >Thành tiền</td>
-                            <td>Hoàn tác</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php if(isset($_SESSION['cart']['buy'])&&!empty($_SESSION['id_customer'])) {?>
-                        <?php foreach ($_SESSION['cart']['buy'] as $key => $value) { ?>
-                        <tr>
-                            <td><?php echo $value['code']; ?></td>
-                            <td>
-                                <a href="" title="" class="thumb">
-                                    <img src="<?php echo $value['image']; ?>" alt="">
-                                </a>
-                            </td>
-                            <td>
-                                <a href="?modules=products&controllers=index&action=detail&id=<?php echo $value['id']; ?>" title="" class="name-product"><?php echo $value['name']; ?></a>
-                            </td>
-                            <td><?php echo $value['price']." .VNĐ"; ?></td>
-                            <td>
-                                <input min="1" style="width: 60px;" type="number" name="qty[<?php echo $value['id']; ?>]" value="<?php echo  $value['qty']; ?>" class="num-order" >
-                            </td>
-                            <td><?php echo $value['sub_total']." .VNĐ"; ?></td>
-                            <td>
-                                <p ><a href="?modules=carts&controllers=index&action=delete&id=<?php echo $value['id']; ?>" title="" class="del-product"><i class="fa fa-trash-o"></i></a></p>
-                            </td>
-                        </tr>
-                        <?php }}; ?>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="7">
-                                <div class="clearfix">
-                                    <p id="total-price" class="fl-right">Tổng giá: <span><?php if(isset($_SESSION['cart']['buy'])&&!empty($_SESSION['id_customer'])) echo $_SESSION['cart']['info']['total']." .VNĐ"; else echo "0 .VNĐ"; ?></span></p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="7">
-                                <div class="clearfix">
-                                    <div  class="fl-right">
-                                        <a style="margin-right: 660px;background-color: #dc5c2f;" href="?modules=checkouts&controllers=index&action=story" title="" id="checkout-cart">Lịch sử đơn hàng</a>
-                                        <input type="submit" id="update-cart" name="btn-update_cart" value="Cập nhật giỏ hàng">
-                                        <a href="?modules=checkouts&controllers=index&action=index" title="" id="checkout-cart">Thanh toán</a>
+                        <thead>
+                            <tr>
+                                <td>Mã sản phẩm</td>
+                                <td>Ảnh sản phẩm</td>
+                                <td>Tên sản phẩm</td>
+                                <td>Giá sản phẩm</td>
+                                <td>Số lượng</td>
+                                <td>Thành tiền</td>
+                                <td>Hoàn tác</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php 
+                            if (isset($_SESSION['cart']['buy']) && !empty($_SESSION['id_customer'])) {
+                                $_SESSION['cart']['info']['total'] = 0; 
+                                foreach ($_SESSION['cart']['buy'] as $key => $value) {
+                                    $value['sub_total'] = $value['price'] * $value['qty'];
+                                    $_SESSION['cart']['info']['total'] += $value['sub_total']; 
+                            ?>
+                            <tr>
+                                <td><?php echo $value['code']; ?></td>
+                                <td>
+                                    <a href="" title="" class="thumb">
+                                        <img src="<?php echo $value['image']; ?>" alt="">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="?modules=products&controllers=index&action=detail&id=<?php echo $value['id']; ?>" title="" class="name-product"><?php echo $value['name']; ?></a>
+                                </td>
+                                <td><?php echo number_format($value['price'], 0, ',', '.') . " VNĐ"; ?></td>
+                                <td>
+                                    <input min="1" style="width: 60px;" type="number" name="qty[<?php echo $value['id']; ?>]" value="<?php echo  $value['qty']; ?>" class="num-order" >
+                                </td>
+                                <td><?php echo number_format($value['sub_total'], 0, ',', '.') . " VNĐ"; ?></td>
+                                <td>
+                                    <p><a href="?modules=carts&controllers=index&action=delete&id=<?php echo $value['id']; ?>" title="" class="del-product"><i class="fa fa-trash-o"></i></a></p>
+                                </td>
+                            </tr>
+                            <?php 
+                                } 
+                            } 
+                            ?>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="7">
+                                    <div class="clearfix">
+                                        <p id="total-price" class="fl-right">Tổng giá: 
+                                            <span>
+                                                <?php 
+                                                if (isset($_SESSION['cart']['info']['total']) && $_SESSION['cart']['info']['total'] > 0) {
+                                                    echo number_format($_SESSION['cart']['info']['total'], 0, ',', '.') . " VNĐ";
+                                                } else {
+                                                    echo "0 VNĐ";
+                                                }
+                                                ?>
+                                            </span>
+                                        </p>
                                     </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tfoot>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="7">
+                                    <div class="clearfix">
+                                        <div class="fl-right">
+                                            <a style="margin-right: 660px;background-color: #dc5c2f;" href="?modules=checkouts&controllers=index&action=story" title="" id="checkout-cart">Lịch sử đơn hàng</a>
+                                            <input type="submit" id="update-cart" name="btn-update_cart" value="Cập nhật giỏ hàng">
+                                            <a href="?modules=checkouts&controllers=index&action=index" title="" id="checkout-cart">Thanh toán</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </form>
                 </table>
                 <hr>
-                </form>
             </div>
         </div>
         <div class="section" id="action-cart-wp">

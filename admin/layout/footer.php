@@ -1,6 +1,6 @@
 <div id="footer-wp">
     <div class="wp-inner">
-        <p id="copyright">2023 © MANAGER PHONESTORE</p>
+        <p id="copyright">2025 © MANAGER PHONESTORE</p>
     </div>
 </div>
 </div>

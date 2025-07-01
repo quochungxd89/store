@@ -70,7 +70,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 				<a href="?modules=users&controller=index&action=login">Go To Home</a>
 			</div>
 		<div class="copyright login-copyright">
-           <p>© 2023 Nhóm 4 </p>    
+           <p>© 2025 Nhóm 4 </p>    
 		</div>
 </body>
 </html>

@@ -71,21 +71,21 @@
                 <table class="shop-table">
                     <thead>
                         <tr>
-                            <td>E-Shopper Inc.</td>
+                            <td>PhoneStore</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="cart-item">
-                            <td class="product-name">68 Phú Diễn - Bắc Từ Liêm - Hà Nội<strong class="product-quantity">x 1</strong></td>
+                            <td class="product-name">Thủ Đức - Hồ Chí Minh<strong class="product-quantity"></strong></td>
                         </tr>
                         <tr class="cart-item">
-                            <td class="product-name">Mobile: +84 2222 5286<strong class="product-quantity">x 2</strong></td>
+                            <td class="product-name">Mobile: 1900.9999<strong class="product-quantity"></strong></td>
                         </tr>
                         <tr class="cart-item">
-                            <td class="product-name">Fax: 123 456 789<strong class="product-quantity">x 2</strong></td>
+                            <td class="product-name">Fax: 123 456 789<strong class="product-quantity"></strong></td>
                         </tr>
                         <tr class="order-total">
-                            <td><strong class="total-price">Email: 21111065662@gmail.com</strong></td>
+                            <td><strong class="total-price">Email: quochungxd89@gmail.com</strong></td>
                         </tr>
                     </tbody>
                     <tfoot>
@@ -97,7 +97,7 @@
                         		<strong class="total-price">
                         			<ul>
 										<li style="display: inline-block; padding: 0px 20px; font-size: 50px;">
-											<a style="color:gray;" href="https://web.facebook.com/quangem2703"><i class="fa fa-facebook"></i></a>
+											<a style="color:gray;" href="https://web.facebook.com/"><i class="fa fa-facebook"></i></a>
 										</li >
 										<li style="display: inline-block;padding: 0px 20px;font-size: 50px;">
 											<a style="color:gray;" href="#"><i class="fa fa-twitter"></i></a>
