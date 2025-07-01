@@ -17,9 +17,6 @@
                                 <li>
                                     <a href="?page=category_product" title="">Oppo</a>
                                 </li>
-                                <li>
-                                    <a href="?page=category_product" title="">Bphone</a>
-                                </li>
                             </ul>
                         </li> 
                         <li>
@@ -33,35 +30,6 @@
                                 </li>
                             </ul>
                         </li> 
-                        <!-- <li>
-                            <a href="?modules=products&controllers=index&action=show&id_cat=12" title="">Lap Top</a> -->
-                            <!-- <ul class="sub-menu">
-                                <li>
-                                    <a href="?page=category_product" title="">Iphone</a>
-                                </li>
-                                <li>
-                                    <a href="?page=category_product" title="">Samsung</a>
-                                </li>
-                                <li>
-                                    <a href="?page=category_product" title="">Oppo</a>
-                                </li>
-                                <li>
-                                    <a href="?page=category_product" title="">Bphone</a>
-                                </li>
-                            </ul> -->
-                        <!-- </li> -->
-                        <!-- <li>
-                            <a href="?modules=home" title="">Tai Nghe</a>
-                        </li>
-                        <li>
-                            <a href="?modules=home" title="">Thời Trang</a>
-                        </li>
-                        <li>
-                            <a href="?modules=home" title="">Đồ Gia Dụng</a>
-                        </li>
-                        <li>
-                            <a href="?modules=home" title="">Thiết Bị Văn Phòng</a>
-                        </li> -->
                      </ul>
                 </div> 
             </div>
@@ -94,12 +62,12 @@
             </div>
             <div class="section" id="banner-wp">
                 <div class="section-detail">
-                    <a href="" title="" class="thumb">
-                        <img src="public/images/banner00.png" alt="">
+                    <a href="" title="" class="thumb" style="display: block; margin-bottom: 10px;">
+                        <img src="public/images/banner00.png" alt="" style="display: block;">
                     </a>
-                     <!-- <a href="" title="" class="thumb" style="margin-top: 10px;">
-                        <img src="public/images/bigsale.jpg" alt="">
-                    </a> -->
+                    <a href="" title="" class="thumb" style="display: block;">
+                        <img src="public/images/banner111.png" alt="" style="display: block;">
+                    </a>
                 </div>
             </div>
         </div>
