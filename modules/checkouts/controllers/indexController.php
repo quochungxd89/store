@@ -37,7 +37,7 @@ function detailStoryAction(){
     load_view('detail_story', $data);
 }
 
-function checkoutAction() {
+function checkoutAction(){
     if (!empty($_POST['btn_submit'])) {
         if (isset($_SESSION['id_customer'])) {
             if (!empty($_POST['payment_method']) && !empty($_SESSION['cart']['buy'])) {
@@ -47,42 +47,40 @@ function checkoutAction() {
                 $create_date = date("d/m/Y", time());
                 $time = time();
                 $code = $_SESSION['username'] . "($time)";
-                $note = $_POST['note'];
+                $note = !empty($_POST['note']) ? $_POST['note'] : "";
                 $payment_method = $_POST['payment_method'];
-                $status = "chờ xác nhận";
+                $status = "Chờ xác nhận";
 
                 $id_customer = $_SESSION['id_customer'];
                 $data_cart = db_fetch_row("SELECT * FROM `tbl_cart` WHERE `id_customer` = $id_customer");
-                $id_cart = $data_cart['id'];
-                insertOrder($custom_id, $total_price, $total_num_product, $create_date, $note, $payment_method, $status, $id_cart, $time, $code);
+                if (!empty($data_cart)) {
+                    $id_cart = $data_cart['id'];
+                    insertOrder($custom_id, $total_price, $total_num_product, $create_date, $note, $payment_method, $status, $id_cart, $time, $code);
+                    $data_order = db_fetch_row("SELECT * FROM `tbl_order` WHERE `time` = '$time'");
+                    $id_order = $data_order['id'];
 
-                $data_order = db_fetch_row("SELECT * FROM `tbl_order` WHERE `time` = '$time'");
-                $id_order = $data_order['id'];
+                    foreach ($_SESSION['cart']['buy'] as $value) {
+                        inserOderDetail($id_order, $value['id'], $value['qty'], $value['sub_total']);
+                    }
 
-                foreach ($_SESSION['cart']['buy'] as $value) {
-                    inserOderDetail($id_order, $value['id'], $value['qty'], $value['sub_total']);
+                    sendMail($id_order);
+                    deletecart();
+                    unset($_SESSION['cart']['buy']);
+
+                    echo "<script>alert('Đặt hàng thành công!');</script>";
+                    echo "<script>window.location.href = '?modules=checkouts&controllers=index&action=story';</script>";
+                    exit;
                 }
-
-                sendMail($id_order);
-
-                unset($_SESSION['cart']);
-                deletecart();
-
-                $_SESSION['success'] = true;
-                header('location: ?modules=checkouts&controllers=index&action=story');
-                exit();
             } else {
-                $_SESSION['messBuy'] = true;
-                header('location: ?modules=checkouts&controllers=index&action=index');
+                echo "<script>alert('Giỏ hàng rỗng hoặc chưa chọn phương thức thanh toán!');</script>";
+                echo "<script>window.location.href = '?modules=checkouts&controllers=index&action=index';</script>";
+                exit;
             }
         } else {
-            $_SESSION['mess'] = true;
-            header('location: ?modules=users&controllers=index&action=index');
+            echo "<script>alert('Bạn cần đăng nhập để tiếp tục đặt hàng!');</script>";
+            echo "<script>window.location.href = '?modules=users&controllers=index&action=index';</script>";
+            exit;
         }
     }
-}
-function getOrderHistory($custom_id) {
-    $sql = "SELECT * FROM tbl_order WHERE custom_id = $custom_id ORDER BY create_date DESC";
-    return db_fetch_array($sql);
 }
 ?>

@@ -55,13 +55,13 @@
     </div>
     <div id="foot-bot">
         <div class="wp-inner">
-            <p id="copyright">© Bản quyền thuộc về unitop.vn | Php Master</p>
+            <p id="copyright">© Bản quyền thuộc về nhóm 4</p>
         </div>
     </div>
 </div>
 </div>
 <div id="menu-respon">
-    <a href="?page=home" title="" class="logo">VSHOP</a>
+    <a href="?page=home" title="" class="logo">PhoneStore</a>
     <div id="menu-respon-wp">
         <ul class="" id="main-menu-respon">
             <li>
