@@ -74,7 +74,7 @@
                             </div>
                             <div id="action-wp" class="fl-right">
                                 <div id="advisory-wp" class="fl-left">
-                                    <span class="title">Tư vấn</span>
+                                    <span class="title">Hotline</span>
                                     <span class="phone">1900.9999</span>
                                 </div>
                                 <div id="btn-respon" class="fl-right"><i class="fa fa-bars" aria-hidden="true"></i></div>

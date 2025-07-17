@@ -26,7 +26,7 @@
                             <div class="thumb">
                                 <img src="public/images/icon-2.png">
                             </div>
-                            <h3 class="title">Tư vấn 24/7</h3>
+                            <h3 class="title">Hotline 24/7</h3>
                             <p class="desc">1900.9999</p>
                         </li>
                         <li>
@@ -68,8 +68,8 @@
                             </a>
                             <a href="?modules=products&controllers=index&action=detail&id=<?php echo $value['id']; ?>" title="" class="product-name"><?php echo $value['name']; ?></a>
                             <div class="price">
-                                <span style="display: block;" class="new"><?php echo $value['promotional_price'].'.VND'; ?></span>
-                                <span style="display: block;" class="old"><?php echo $value['price'].'.VND'; ?></span>
+                                <span style="display: block;" class="old"><?php echo number_format($value['price'], 0, ',', '.') . ' VNĐ'; ?></span>
+                                <span style="display: block;" class="new"><?php echo number_format($value['promotional_price'], 0, ',', '.') . ' VNĐ'; ?></span>
                             </div>
                             <div class="action clearfix">
                                 <a href="<?php $id = $value['id']; if(!empty($_SESSION['id_customer'])) $urlll ="?modules=carts&controllers=index&action=add&id=$id" ;else $urlll ="?modules=users&controllers=index&action=index&report=1" ;echo $urlll;?> " title="" class="add-cart fl-left">Thêm giỏ hàng</a>
@@ -96,8 +96,8 @@
                             </a>
                             <a href="?page=detail_product" title="" class="product-name"><?php echo $value['name']; ?></a>
                             <div class="price">
-                                <span style="display: block;"  class="new"><?php echo $value['promotional_price'].'.VND'; ?></span>
-                                <span style="display: block;"  class="old"><?php echo $value['price'].'.VND'; ?></span>
+                                <span style="display: block;"  class="old"><?php echo number_format($value['price'], 0, ',', '.') . ' VNĐ'; ?></span>
+                                <span style="display: block;"  class="new"><?php echo number_format($value['promotional_price'], 0, ',', '.') . ' VNĐ'; ?></span>
                             </div>
                             <div class="action clearfix">
                                 <a href="<?php $id = $value['id']; if(!empty($_SESSION['id_customer'])) $urlll ="?modules=carts&controllers=index&action=add&id=$id" ;else $urlll ="?modules=users&controllers=index&action=index&report=1" ;echo $urlll;?> " title="" class="add-cart fl-left">Thêm giỏ hàng</a>
@@ -123,8 +123,8 @@
                             </a>
                             <a href="" title="" class="product-name"><?php echo $value['name']; ?></a>
                             <div class="price">
-                                <span style="display: block;" class="new"><?php echo $value['promotional_price'].'.VND'; ?></span>
-                                <span style="display: block;" class="old"><?php echo $value['price'].'.VND'; ?></span>
+                                <span style="display: block;" class="old"><?php echo number_format($value['price'], 0, ',', '.') . ' VNĐ'; ?></span>
+                                <span style="display: block;" class="new"><?php echo number_format($value['promotional_price'], 0, ',', '.') . ' VNĐ'; ?></span>
                             </div>
                             <div class="action clearfix">
                                 <a href="<?php $id = $value['id']; if(!empty($_SESSION['id_customer'])) $urlll ="?modules=carts&controllers=index&action=add&id=$id" ;else $urlll ="?modules=users&controllers=index&action=index&report=1" ;echo $urlll;?> " title="" class="add-cart fl-left">Thêm giỏ hàng</a>
@@ -150,8 +150,8 @@
                             </a>
                             <a href="" title="" class="product-name"><?php // echo $value['name']; ?></a>
                             <div class="price">
-                                <span style="display: block;" class="new"><?php // echo $value['promotional_price'].'.VND'; ?></span>
-                                <span style="display: block;" class="old"><?php // echo $value['price'].'.VND'; ?></span>
+                                <span style="display: block;" class="new"><?php // echo number_format($value['promotional_price'], 0, ',', '.') . ' VNĐ'; ?></span>
+                                <span style="display: block;" class="old"><?php // echo number_format($value['price'], 0, ',', '.') . ' VNĐ'; ?></span>
                             </div>
                             <div class="action clearfix">
                                 <a href="<?php // $id = $value['id']; if(!empty($_SESSION['id_customer'])) $urlll ="?modules=carts&controllers=index&action=add&id=$id" ;else $urlll ="?modules=users&controllers=index&action=index&report=1" ;echo $urlll;?> " title="" class="add-cart fl-left">Thêm giỏ hàng</a>

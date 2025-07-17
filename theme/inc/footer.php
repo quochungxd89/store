@@ -14,13 +14,13 @@
                 <h3 class="title">Thông tin cửa hàng</h3>
                 <ul class="list-item">
                     <li>
-                        <p>106 - Trần Bình - Cầu Giấy - Hà Nội</p>
+                        <p>Thủ Đức - Hồ Chí Minh</p>
                     </li>
                     <li>
-                        <p>0987.654.321 - 0989.989.989</p>
+                        <p>0935.468.336 - 1900.9999</p>
                     </li>
                     <li>
-                        <p>vshop@gmail.com</p>
+                        <p>phonestore@gmail.com</p>
                     </li>
                 </ul>
             </div>
@@ -34,7 +34,7 @@
                         <a href="" title="">Chính sách bảo hành - đổi trả</a>
                     </li>
                     <li>
-                        <a href="" title="">Chính sách hội viện</a>
+                        <a href="" title="">Chính sách hội viên</a>
                     </li>
                     <li>
                         <a href="" title="">Giao hàng - lắp đặt</a>
@@ -55,7 +55,7 @@
     </div>
     <div id="foot-bot">
         <div class="wp-inner">
-            <p id="copyright">© Bản quyền thuộc về nhóm 4</p>
+            <p id="copyright">© Bản quyền thuộc về nhóm 7</p>
         </div>
     </div>
 </div>

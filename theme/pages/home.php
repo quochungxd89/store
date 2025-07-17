@@ -28,7 +28,7 @@
                             <div class="thumb">
                                 <img src="public/images/icon-2.png">
                             </div>
-                            <h3 class="title">Tư vấn 24/7</h3>
+                            <h3 class="title">Hotline 24/7</h3>
                             <p class="desc">1900.9999</p>
                         </li>
                         <li>

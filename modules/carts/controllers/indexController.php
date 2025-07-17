@@ -79,8 +79,8 @@ function updateAction(){
 	foreach ($qty as $key => $value) {
 		
 		$_SESSION['cart']['buy'][$key]['qty'] = $value;
-		$_SESSION['cart']['buy'][$key]['sub_total'] = $value * $_SESSION['cart']['buy'][$key]['price'];
-		$sub_total_price = $value * $_SESSION['cart']['buy'][$key]['price'];
+		$_SESSION['cart']['buy'][$key]['sub_total'] = $value * $_SESSION['cart']['buy'][$key]['promotional_price'];
+		$sub_total_price = $value * $_SESSION['cart']['buy'][$key]['promotional_price'];
 		$data = ['num_total'=>$value, 'sub_total_price'=>$sub_total_price];
 		db_update('tbl_detail_cart', $data, "`id_product` = '$key'");
 		

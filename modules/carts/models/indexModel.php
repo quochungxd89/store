@@ -21,10 +21,10 @@ function addCartByID($id){
 		'id' => $item['id'],
 		'code' => $item['code'],
 		'name' => $item['name'],
-		'price' => $item['price'],
+		'price' => $item['promotional_price'],
 		'image' => $item['image'],
 		'qty' => $qty,
-		'sub_total' => $qty * $item['price']
+		'sub_total' => $qty * $item['promotional_price']
 
 		];
 

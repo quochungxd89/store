@@ -71,8 +71,8 @@
                             </div>
                             <div id="action-wp" class="fl-right">
                                 <div id="advisory-wp" class="fl-left">
-                                    <span class="title">Tư vấn</span>
-                                    <span class="phone">0822.225.286</span>
+                                    <span class="title">Hotline</span>
+                                    <span class="phone">1900.9999</span>
                                 </div>
                                 <div id="btn-respon" class="fl-right"><i class="fa fa-bars" aria-hidden="true"></i></div>
                                 <a href="?page=cart" title="giỏ hàng" id="cart-respon-wp" class="fl-right">
@@ -117,13 +117,13 @@
                 <h3 class="title">Thông tin cửa hàng</h3>
                 <ul class="list-item">
                     <li>
-                        <p>68 - Phú Diễn - Bắc Từ Liêm - Hà Nội</p>
+                        <p>Thủ Đức - Ho Chi Minh</p>
                     </li>
                     <li>
-                        <p>0848.454.796 - 0822.225.286</p>
+                        <p>0935.468.336 - 1900.9999</p>
                     </li>
                     <li>
-                        <p> Nhom4@gmail.com</p>
+                        <p> Nhom7@gmail.com</p>
                     </li>
                 </ul>
             </div>
@@ -137,7 +137,7 @@
                         <a href="" title="">Chính sách bảo hành - đổi trả</a>
                     </li>
                     <li>
-                        <a href="" title="">Chính sách hội viện</a>
+                        <a href="" title="">Chính sách hội viên</a>
                     </li>
                     <li>
                         <a href="" title="">Giao hàng - lắp đặt</a>
@@ -158,7 +158,7 @@
     </div>
     <div id="foot-bot">
         <div class="wp-inner">
-            <p id="copyright">© Bản quyền thuộc về NHOM4 | PHONESTORE</p>
+            <p id="copyright">© Bản quyền thuộc về NHOM7 | PHONESTORE</p>
         </div>
     </div>
 </div>

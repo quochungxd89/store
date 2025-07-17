@@ -13,7 +13,7 @@
                     </li>
                     <li>
                         <h3 class="title">Địa chỉ nhận hàng</h3>
-                        <span class="detail">Hà Nội / 01689141595</span>
+                        <span class="detail">Hồ Chí Minh / 0123456789</span>
                     </li>
                     <li>
                         <h3 class="title">Thông tin vận chuyển</h3>
@@ -53,7 +53,7 @@
                                         <img src="public/images/img-product.png" alt="">
                                     </div>
                                 </td>
-                                <td class="thead-text">Chân váy nữ</td>
+                                <td class="thead-text">Tai nghe</td>
                                 <td class="thead-text">145,000 VNĐ</td>
                                 <td class="thead-text">5</td>
                                 <td class="thead-text">725,000 VNĐ</td>
@@ -65,7 +65,7 @@
                                         <img src="public/images/img-product.png" alt="">
                                     </div>
                                 </td>
-                                <td class="thead-text">Chân váy nữ</td>
+                                <td class="thead-text">Tai nghe</td>
                                 <td class="thead-text">145,000 VNĐ</td>
                                 <td class="thead-text">5</td>
                                 <td class="thead-text">725,000 VNĐ</td>
@@ -77,7 +77,7 @@
                                         <img src="public/images/img-product.png" alt="">
                                     </div>
                                 </td>
-                                <td class="thead-text">Chân váy nữ</td>
+                                <td class="thead-text">Tai nghe</td>
                                 <td class="thead-text">145,000 VNĐ</td>
                                 <td class="thead-text">5</td>
                                 <td class="thead-text">725,000 VNĐ</td>

@@ -86,13 +86,13 @@ function addAction() {
 		}
 
 		if(!empty($_POST['price'])){
-			$price = $_POST['price'];
+			$price = format_currency_to_number($_POST['price']);
 		}else{
 			$err['price'] ="price không được rỗng";		
 		}
 
 		if(!empty($_POST['promotional_price'])){
-			$promotional_price = $_POST['promotional_price'];
+			$promotional_price = format_currency_to_number($_POST['promotional_price']);
 		}else{
 			$price = "";
 		}
@@ -297,4 +297,7 @@ function deleteAction() {
 	$id = $_GET['id'];
 	delete_product_by_id($id);
 	header('location:?modules=products&controllers=index&action=list');
+}
+function format_currency_to_number($str) {
+    return (int) str_replace(['.', ','], '', trim($str));
 }

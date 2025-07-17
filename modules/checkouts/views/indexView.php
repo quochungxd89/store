@@ -114,7 +114,7 @@
                                 <strong class="total-price">
                                     <?php if(isset($_SESSION['cart']['buy'])) 
                                             {$tong= $_SESSION['cart']['info']['total']; 
-                                            echo $tong." VND"; }
+                                            echo number_format($tong, 0, ',', '.') . ' VNĐ'; }
                                             else {
                                                 $tong =0;
                                                 echo "VND";

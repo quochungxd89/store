@@ -48,7 +48,7 @@
                             <td><?php echo $value['code']; ?></td>
                             <td><?php echo $value['create_date']; ?></td>
                             <td><?php echo $value['total_num_product']; ?></td>
-                            <td><?php echo $value['total_price'].' .VNĐ' ?></td>
+                            <td><?php echo number_format($value['total_price'], 0, ',', '.') . ' VNĐ'; ?></td>
                             <td><?php echo $value['status'] ;?></td>
                             <td><a href="?modules=checkouts&controllers=index&action=detailStory&idOrder=<?php echo $value['id']; ?>&code=<?php echo $value['code']; ?>" title="" class="name-product">Chi tiết</a></td>
                            <?php }; ?>

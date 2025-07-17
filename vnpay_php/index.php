@@ -118,7 +118,7 @@
                     <div class="form-group">
                         <label >Tỉnh/TP (*)</label>
                         <input class="form-control" id="txt_bill_city"
-                               name="txt_bill_city" type="text" value="Hà Nội"/> 
+                               name="txt_bill_city" type="text" value="Hồ Chí Minh"/> 
                     </div>
                     <div class="form-group">
                         <label>Bang (Áp dụng cho US,CA)</label>
@@ -136,12 +136,12 @@
                     <div class="form-group">
                         <label >Họ tên (*)</label>
                         <input class="form-control" id="txt_ship_fullname"
-                               name="txt_ship_fullname" type="text" value="Nguyễn Thế Vinh"/>
+                               name="txt_ship_fullname" type="text" value="Chử Quốc Hưng"/>
                     </div>
                     <div class="form-group">
                         <label >Email (*)</label>
                         <input class="form-control" id="txt_ship_email"
-                               name="txt_ship_email" type="text" value="vinhnt@vnpay.vn"/>
+                               name="txt_ship_email" type="text" value="hungcq@vnpay.vn"/>
                     </div>
                     <div class="form-group">
                         <label >Số điện thoại (*)</label>
@@ -151,7 +151,7 @@
                     <div class="form-group">
                         <label >Địa chỉ (*)</label>
                         <input class="form-control" id="txt_ship_addr1"
-                               name="txt_ship_addr1" type="text" value="Phòng 315, Công ty VNPAY, Tòa nhà TĐL, 22 Láng Hạ, Đống Đa, Hà Nội"/>
+                               name="txt_ship_addr1" type="text" value="Linh Tây, Thủ Đức, HCM"/>
                     </div>
                     <div class="form-group">
                         <label >Mã bưu điện (*)</label>
@@ -161,7 +161,7 @@
                     <div class="form-group">
                         <label >Tỉnh/TP (*)</label>
                         <input class="form-control" id="txt_ship_city"
-                               name="txt_ship_city" type="text" value="Hà Nội"/>
+                               name="txt_ship_city" type="text" value="Hồ Chí Minh"/>
                     </div>
                     <div class="form-group">
                         <label>Bang (Áp dụng cho US,CA)</label>
@@ -179,7 +179,7 @@
                     <div class="form-group">
                         <label >Tên khách hàng</label>
                         <input class="form-control" id="txt_inv_customer"
-                               name="txt_inv_customer" type="text" value="Lê Văn Phổ"/>
+                               name="txt_inv_customer" type="text" value="Lê Văn Anh"/>
                     </div>
                     <div class="form-group">
                         <label >Công ty</label>
@@ -189,7 +189,7 @@
                     <div class="form-group">
                         <label >Địa chỉ</label>
                         <input class="form-control" id="txt_inv_addr1"
-                               name="txt_inv_addr1" type="text" value="22 Láng Hạ, Phường Láng Hạ, Quận Đống Đa, TP Hà Nội"/>
+                               name="txt_inv_addr1" type="text" value="Linh Tây, Thủ Đức, HCM"/>
                     </div>
                     <div class="form-group">
                         <label>Mã số thuế</label>

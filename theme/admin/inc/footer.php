@@ -1,6 +1,6 @@
 <div id="footer-wp">
     <div class="wp-inner">
-        <p id="copyright">Nhóm 4</p>
+        <p id="copyright">Nhóm 7</p>
     </div>
 </div>
 </div>

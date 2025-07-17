@@ -20,7 +20,7 @@
                         <p>0935.468.336 - 0935.468.336</p>
                     </li>
                     <li>
-                        <p> Nhom4@gmail.com</p>
+                        <p> Nhom7@gmail.com</p>
                     </li>
                 </ul>
             </div>
@@ -34,7 +34,7 @@
                         <a href="" title="">Chính sách bảo hành - đổi trả</a>
                     </li>
                     <li>
-                        <a href="" title="">Chính sách hội viện</a>
+                        <a href="" title="">Chính sách hội viên</a>
                     </li>
                     <li>
                         <a href="" title="">Giao hàng - lắp đặt</a>
@@ -55,7 +55,7 @@
     </div>
     <div id="foot-bot">
         <div class="wp-inner">
-            <p id="copyright">© Bản quyền thuộc về NHOM4 | PHONESTORE</p>
+            <p id="copyright">© Bản quyền thuộc về NHOM7 | PHONESTORE</p>
         </div>
     </div>
 </div>
